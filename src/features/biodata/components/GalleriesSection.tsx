@@ -3,7 +3,7 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
 import { ImageCarousel } from "@/components/ui/image-carousel";
-import { personalPhotos, familyPhotos, sketches } from "@/lib/data/galleries";
+import { personalPhotos } from "@/lib/data/galleries";
 
 export default function GalleriesSection() {
   return (
