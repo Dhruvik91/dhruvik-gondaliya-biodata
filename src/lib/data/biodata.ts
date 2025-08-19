@@ -134,7 +134,7 @@ export const biodata: Biodata = {
     hobbies: ["Gym", "Reading", "Coding", "Sketching"],
   },
   contact: {
-    phone: "+91 709689981",
+    phone: "+91 7096899881",
     email: "dhruvikgondaliya91@gmail.com",
     fatherPhone: "+91 9925034894",
     linkedin: "https://www.linkedin.com/in/dhruvik-gondaliya-143ab923b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
