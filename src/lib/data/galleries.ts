@@ -25,7 +25,6 @@ export const personalPhotos: string[] = [
   ImageFive?.src,
   ImageNine?.src,
   ImageTwo?.src,
-  ImageThree?.src,
   ImageOne?.src,
 ];
 
