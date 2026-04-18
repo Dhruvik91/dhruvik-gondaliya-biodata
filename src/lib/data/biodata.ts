@@ -4,6 +4,18 @@ import MotherImage from "@/assets/motherImage.jpeg";
 import BrotherImage from "@/assets/image6.jpeg";
 import MaternalImage from "@/assets/mamaImage.jpeg";
 
+const calculateAge = (dob: string): string => {
+  const birthDate = new Date(dob);
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return `${age} years`;
+};
+
+
 export interface Address {
   line1: string;
   area: string;
@@ -72,9 +84,10 @@ export interface Biodata {
 export const biodata: Biodata = {
   personal: {
     fullName: "Dhruvik Bharatbhai Gondaliya",
-    dateOfBirth: "2002-03-08",
-    age: "23 years",
+    dateOfBirth: "08-03-2002",
+    age: calculateAge("2002-03-08"),
     height: "5'9 ft",
+
     weight: "75 kg",
     complexion: "Fair",
     bodyType: "Athletic",
@@ -112,7 +125,7 @@ export const biodata: Biodata = {
     },
     {
       relation: "Maternal",
-      name: "Shaileshbhai Popatbhai Undhad",
+      name: "Late Shaileshbhai Popatbhai Undhad",
       notes: "Rajkot",
       photo:
       MaternalImage?.src,
