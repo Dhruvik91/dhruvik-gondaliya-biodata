@@ -84,11 +84,11 @@ export interface Biodata {
 export const biodata: Biodata = {
   personal: {
     fullName: "Dhruvik Bharatbhai Gondaliya",
-    dateOfBirth: "08-03-2002",
-    age: calculateAge("2002-03-08"),
-    height: "5'9 ft",
+    dateOfBirth: "08-05-2002",
+    age: calculateAge("2002-05-08"),
+    height: "5'8 ft",
 
-    weight: "75 kg",
+    weight: "70 kg",
     complexion: "Fair",
     bodyType: "Athletic",
     address: {
@@ -98,7 +98,7 @@ export const biodata: Biodata = {
       district: "Rajkot",
       postalCode: "360311",
     },
-    land: "6 Vigha",
+    land: "23 Vigha",
     photo:
     ImageOne?.src,
   },
